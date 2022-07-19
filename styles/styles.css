@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #9fabb2;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+}
+h1, h2, h3{
+    color: #4c545d;
+}
+section {
+    padding: 3rem 1rem;
+}
+/* Header */
+header{
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: round;
+}
+.header{
+    padding: 7rem 0 4rem;
+}
+.header img{
+    max-width: 7rem;
+    margin-bottom: 3rem;
+}
+.header-section{
+    display: grid;
+    gap: 1rem;
+    max-width: 40rem;
+    margin: 0 auto 2rem;
+}
+.header-section h1{
+    font-size: 2.5rem;
+}
+.header-section h2{
+    font-size: 2rem;
+}
+.header-section p{
+    line-height: 1.5;
+}
+.download-btn{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.download-btn a{
+    color: #fff;
+    border-radius: 5rem;
+    box-shadow: 0 0.5rem 0.5rem #4c545d1e;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    transition: .2s;
+}
+.ios-btn{
+    background-color: #26baa4;
+}
+.ios-btn:hover{
+    background-color: #17a590;
+}
+.mac-btn{
+    background-color: #6173ff;
+}
+.mac-btn:hover{
+    background-color: #4a5deb;
+}
+/* tracker section */
+.tracker{
+    padding-left: 0;
+}
+.snippets{
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.snippets img{
+    left: -3rem;
+    max-width: 50%;
+    position: relative;
+}
+.snippets-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+    text-align: left;
+    max-width: 23rem;
+}
+.snippets-content p{
+    line-height: 2;
+    margin-top: 0.5rem;
+}
+/* Clipboard access */
+.access{
+    margin-top: 5rem;
+}
+.access img{
+    max-width: 100%;
+}
+/* Clipboard tools */
+.workflow-supercharge{
+    max-width: 70rem;
+    margin: auto;
+}
+.blacklist-img{
+    height: 2rem;
+}
+.tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-self: center;
+    margin-top: 5rem;
+}
+.tool{
+    line-height: 1.6;
+}
+.tool h3{
+    margin: 2rem 0 1rem;
+}
+/* Press */
+.press-brands{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 80rem;
+    margin: auto;
+}
+.press img{
+    max-width: 8rem;
+    margin: auto;
+}
+/* Footer */
+footer{
+    background-color: #ebebeb;
+    margin-top: 8rem;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 80rem;
+    margin: auto;
+    text-align: left;
+}
+.logo-footer img{
+    max-width: 3.5rem;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links ul li{
+    margin-bottom: 1rem;
+}
+.footer-links ul li a{
+    color: #4c545d;
+    text-decoration: none;
+}
+.footer-links ul li a:hover{
+    text-decoration: underline;
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.footer-social a {
+    margin-right: 0.7rem;
+}
+/* media query */
+@media (max-width:778px){
+    /* Header */
+    header {
+        background-image: url('../images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .header{
+        padding: 7rem 1rem 4rem;
+    }
+    .header-section h1{
+        font-size: 2rem;
+    }
+    .header-section h2{
+        font-size: 1.5rem;
+    }
+    .download-btn {
+        display: block;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .download-btn a{
+        display: block;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    /* Clipboard snippets */
+    .tracker{
+        padding-left: 1rem;
+    }
+    .snippets{
+        display: grid;
+    }
+    .snippets img{
+        position: static;
+        max-width: 80%;
+        margin: auto;
+    }
+    .snippets-content{
+        text-align: center;
+        max-width: 25rem;
+        margin: auto;
+    }
+    /* Clipboard tools */
+    .tools{
+        display: flex;
+        flex-direction: column;
+        max-width: 25rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+    .blacklist-img{
+        height: 100%;
+    }
+    /* Brands logo */
+    .press-brands {
+        display: grid;
+        grid-template-columns: none;
+        gap: 3rem;
+        max-width: 80rem;
+        margin: auto;
+    }
+    
+    .press img {
+        max-width: 15rem;
+        margin: auto;
+    }
+    /* footer */
+    .footer{
+        grid-template-columns: none;
+        text-align: center;
+    }
+    .logo-footer{
+        margin-bottom: 2rem;
+    }
+    .footer-social{
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .footer-social a{
+        margin-right: 0;
+    }
+}
