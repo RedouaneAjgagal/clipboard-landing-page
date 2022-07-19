@@ -18,6 +18,7 @@ section {
 header{
     background-image: url('../images/bg-header-desktop.png');
     background-repeat: round;
+    background-size: cover;
 }
 .header{
     padding: 7rem 0 4rem;
